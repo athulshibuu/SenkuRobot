@@ -52,8 +52,8 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 Hi {}, my name is {}! 
-I am an Anime themed group management bot.
-Build by weebs for weebs, I specialize in managing anime and similar themed groups.
+I am an super group management bot.
+You can add me to your group
 You can find my list of available commands with /help.
 """
 
@@ -200,26 +200,26 @@ def start(update: Update, context: CallbackContext):
                 reply_markup=InlineKeyboardMarkup(
                     [[
                         InlineKeyboardButton(
-                            text=" 👑 Summon Me ",
+                            text="➕Add me to group",
                             url="t.me/{}?startgroup=true".format(
                                 context.bot.username)),
                          InlineKeyboardButton(
-                             text=" 🔔 Updates ",
+                             text="😎Creator",
                              url="https://t.me/SenkuUpdates")
                      ],
                      [
                         InlineKeyboardButton(
-                            text=" ✨ Help ",
-                            url="https://t.me/SenkuRobot?start=help"),
+                            text="💢Group💢",
+                            url="https://t.me/Cinema_Lokam_Group"),
                          InlineKeyboardButton(
-                            text=" ⚡️ Get Started ",
-                             url="https://t.me/SenkuUpdates/4")        
+                            text="💢Channel💢",
+                             url="https://t.me/New_Cinema_Lokam")        
                        
                      ],
                      [
                         InlineKeyboardButton(
                              text=" ❤️ Source Code ",
-                             url="https://github.com/FtSasaki/SenkuRobot")
+                             url="https://t.me/Mr_Professor_JD")
                     
                     ]]))
     else:
